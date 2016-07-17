@@ -72,7 +72,7 @@ VexMotor.prototype.setSpeed = function(speed) {
 	if (!ready) {
 		throw new Error("I2C bus connection is not initialized with VexMotor.init()");
 	// do some type checking
-	if (!isInteger(speed)) {
+	} else if (!isInteger(speed)) {
 		throw new Error("Speed value " + pin + " is invalid! Use an integer.");
 	} else if (speed < -100 || speed > 100) { // check if the pin value given is within range
 		throw new Error("Speed value " + pin + " is out of range of -100 to 100!");
