@@ -13,7 +13,7 @@ var ready = false; // used to see if the PWM HAT is ready to send commands
 
 //checks if the variable being checked is a legit integer
 function isInteger(n){
-  return ((typeof n == "number") && !isNaN(n) && (parseFloat(value) == parseInt(value)));
+  return ((typeof n == "number") && !isNaN(n) && (parseFloat(n) == parseInt(n)));
 }
 
 // used for checking if an array has a certain value
