@@ -96,7 +96,7 @@ VexMotor.prototype.setSpeed = function(speed) {
 
 VexMotor.prototype.detach = function() {
 	this.setSpeed(0);
-	pins = pins.filter(e => e !== pin);
+	pins = pins.filter(e => e !== this.pin);
 }
 
 module.exports = VexMotor;
