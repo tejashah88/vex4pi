@@ -48,7 +48,7 @@ function VexMotor(pin) {
 	}
 }
 
-VexMotor.init = function() {
+exports.init = function() {
 	bus = i2c.openSync(1);
 	bus.writeByteSync(0x40,0x00,0x10); // sleep mode
 	bus.writeByteSync(0x40,0xFE,0x85); // set to ~49.5Hz
@@ -58,7 +58,7 @@ VexMotor.init = function() {
 	ready = true; // mark the 'ready' flag to true to allow access
 };
 
-VexMotor.deinit = function() {
+exports.deinit = function() {
 	if (pins.length > 0) {
 		throw new Error("Warning: there are still VexMotor objects that haven't been closed properly! Pins " + pins + " are still in use.");
 	}
