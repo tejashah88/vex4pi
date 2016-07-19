@@ -39,7 +39,7 @@ function VexMotor(pin) {
 		throw new Error("Pin value " + pin + " is out of range of 0 to 15!");
 	// check if the pin specified is not used
 	} else if (pins.contains(pin)) {
-		throw new Error("Pin value " + str(pin) + " is already in use!");
+		throw new Error("Pin value " + pin + " is already in use!");
 	// we are good to go
 	} else {
 		this.pin = pin;
@@ -99,4 +99,4 @@ VexMotor.prototype.detach = function() {
 	pins = pins.filter(e => e !== this.pin);
 }
 
-module.exports = VexMotor;
+exports.VexMotor = VexMotor;
