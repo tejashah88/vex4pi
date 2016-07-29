@@ -1,4 +1,8 @@
-[![NPM](https://nodei.co/npm/vex4pi.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vex4pi/)
+[![NPM Stats](https://nodei.co/npm/vex4pi.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vex4pi/)
+
+![NPM](https://img.shields.io/npm/dt/vex4pi.svg)
+![DavidDM](https://david-dm.org/tejashah88/vex4pi.svg)
+![NPM Version](https://img.shields.io/npm/v/vex4pi.svg)
 
 # vex4pi
 A JavaScript library allowing the raspberry pi to control VEX motors via the Adafruit Servo/PWM HAT!
