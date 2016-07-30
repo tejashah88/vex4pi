@@ -22,7 +22,7 @@
     "raspberry"
   ],
   "dependencies": {
-    "i2c-bus": "^1.1.0"
+    "i2c-bus": "^1.1.1"
   },
   "author": "tejashah88",
   "license": "ISC",

@@ -21,7 +21,7 @@ npm install vex4pi --save
 ```
 
 # Features
-* Fail-safe error handling
+* Fail-safe error handling (will reset all pin speed values to 0 and close the connection to the PWM/Servo HAT before throwing an error)
 * Full access to all 16 pin outputs on the PWM/Servo HAT
 * Easy to use speed values compared to RobotC code
 
@@ -46,3 +46,12 @@ vex4pi.deinit();
 ```
 
 # API Reference
+
+#### init()
+Initializes the connection to the PWM/Servo HAT at address 0x40 at /dev/i2c-1, and resets all of the pin speed values to 0.
+
+#### deinit()
+Resets all of the pin speed values to 0 before gracefully closing the connection with the PWM/Servo HAT.
+
+#### setSpeed(Integer pin, Integer speed)
+Sets the `speed` of a motor at the designated `pin` value. Note that the accepted speed values are between -100 and 100, and any value outside that range will be confined into that range (ex. -150 => -100 or 420 => 100). If the init() function has not been called before, or the pin value is not an integer or out of range, this module will safely throw an error.
