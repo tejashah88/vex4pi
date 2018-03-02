@@ -1,10 +1,7 @@
-[![NPM Stats](https://nodei.co/npm/vex4pi.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vex4pi/)
+# vex4pi
 
-![NPM](https://img.shields.io/npm/dt/vex4pi.svg)
-![DavidDM](https://david-dm.org/tejashah88/vex4pi.svg)
 ![NPM Version](https://img.shields.io/npm/v/vex4pi.svg)
 
-# vex4pi
 A JavaScript library allowing the raspberry pi to control VEX motors via the [Adafruit Servo/PWM HAT](https://www.adafruit.com/product/2327)!
 
 # Disclaimer
@@ -32,7 +29,7 @@ npm install vex4pi --save
 
 Let's say we made a simple robot with two motors, one motor controlling the right side of the wheels, and one motor controlling the left side. This code would make the robot go foward at full speed for 5 seconds before stopping. In this example, pin 0 refers to the right motor and pin 1 to the left motor.
 
-```
+```javascript
 var vex4pi = require('vex4pi');
 var sleep = require('sleep').sleep;
 
