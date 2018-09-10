@@ -2,14 +2,13 @@
 
 ![NPM Version](https://img.shields.io/npm/v/vex4pi.svg)
 
-A JavaScript library allowing the raspberry pi to control VEX motors via the [Adafruit Servo/PWM HAT](https://www.adafruit.com/product/2327)!
+A JavaScript library allowing the Raspberry Pi to control VEX motors via the [Adafruit Servo/PWM HAT](https://www.adafruit.com/product/2327)!
 
 # Disclaimer
-* This library is intended to work only for the Raspberry PI, and has **NOT** been tested with other hardware platforms.
+* This library is intended to work only for the Raspberry Pi, and has **NOT** been tested with other hardware platforms.
 * This library requires a [Adafruit Servo/PWM HAT](https://www.adafruit.com/product/2327), and will **NOT** work on direct GPIO (yet).
 * This library only supports VEX Motors at of this release, and has not been tested with other VEX hardware, such as the VEX Servos.
 * This library only contains sync functions. Async may be implemented in a later version.
-
 
 # Installation
 
