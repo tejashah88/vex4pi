@@ -2,7 +2,10 @@
   "name": "vex4pi",
   "version": "0.1.1",
   "description": "A JavaScript library allowing the raspberry pi to control VEX motors via the Adafruit Servo/PWM HAT!",
-  "main": "vex4pi.js",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.0"
+  },
   "scripts": {
     "test": "echo \"Unavailable at this time.\" && exit 1"
   },
@@ -22,12 +25,15 @@
     "raspberry"
   ],
   "dependencies": {
-    "i2c-bus": "^4.0.1"
+    "i2c-bus": "^4.0.2"
   },
   "author": "tejashah88",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tejashah88/vex4pi/issues"
   },
-  "homepage": "https://github.com/tejashah88/vex4pi#readme"
+  "homepage": "https://github.com/tejashah88/vex4pi#readme",
+  "devDependencies": {
+    "eslint": "^5.6.1"
+  }
 }
