@@ -60,8 +60,8 @@ class Vex4Pi {
     // perform the calculations to convert the percentage into a PWM-ready number
     // 0x130 = neutral (speed = 0)
     speed += 0x130;
-    let speedHSB = parseInt(speed / 0x100);
-    let speedLSB = speed % 0x100;
+    const speedHSB = parseInt(speed / 0x100);
+    const speedLSB = speed % 0x100;
 
     // set the actual speed
     this.bus.writeByteSync(0x40, 0x08 + (this.pin * 0x04), speedLSB); // low part of data

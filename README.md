@@ -1,7 +1,6 @@
 # vex4pi
 
 [![NPM Version](https://img.shields.io/npm/v/vex4pi.svg)](https://www.npmjs.com/package/vex4pi)
-[![dependencies Status](https://david-dm.org/tejashah88/vex4pi/status.svg)](https://david-dm.org/tejashah88/vex4pi)
 
 A JavaScript library allowing the Raspberry Pi to control VEX motors via the [Adafruit Servo/PWM HAT](https://www.adafruit.com/product/2327)!
 
