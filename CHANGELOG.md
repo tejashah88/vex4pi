@@ -3,6 +3,9 @@
 ### 1.x (Next)
 * Your commit goes here
 
+### 1.0.1 (July/9/2019)
+* Updated dependencies to resolve moderate DDoS security vulnerabilities.
+
 ### 1.0.0 (Oct/9/2018)
 
 * First official release - [@tejashah88](https://github.com/tejashah88)
